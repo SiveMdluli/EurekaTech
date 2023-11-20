@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EurekaTech Institute</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="header-section">
+        <nav>
+            <a href="index.html"><img src="./img/Eureka_Logo.png" alt="EurekaTech Institute Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Course</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="hero-content">
+            <h1>
+                Worlds Biggest Tech University
+            </h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sint quibusdam fugit quae? Magnam
+                corporis libero <br> molestias reiciendis, ex minima in odit!</p>
+
+            <a href="#" class="hero-btn">Visit Us To Know More</a>
+        </div>
+    </section>
+
+    <!-- Course Section -->
+    <section class="course-section">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, placeat.</p>
+
+        <div class="row">
+            <div class="course-column">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores ad vel animi. In voluptas
+                    dolores laborum sapiente, aut quod laudantium consequatur minus, distinctio debitis eligendi? Eius
+                    facere aspernatur minus laudantium?</p>
+            </div>
+            <div class="course-column">
+                <h3>Degree</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quidem debitis aliquam qui
+                    eaque sed voluptatum minima doloribus aut eveniet unde odit tempora architecto, velit,
+                    voluptatem consectetur quae quod suscipit?</p>
+            </div>
+
+            <div class="course-column">
+                <h3>Post Graduation</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus explicabo obcaecati vel
+                    dicta dolor facere. Ab nisi cupiditate odio totam dicta, deleniti doloremque at quo officia,
+                    dolor placeat impedit maxime.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
