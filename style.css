@@ -107,6 +107,7 @@ nav .fa {
   background: transparent;
   position: relative;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .hero-btn:hover {
@@ -159,25 +160,27 @@ nav .fa {
   }
 }
 
+/* Common Styles */
+
+section h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+section p {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
 /* Course Section */
 .course-section {
   margin: auto;
   width: 80%;
   text-align: center;
   padding-top: 6rem;
-}
-
-.course-section h1 {
-  font-size: 36px;
-  font-weight: 600;
-}
-
-.course-section p {
-  color: #777;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 22px;
-  padding: 10px;
 }
 
 .course-section .row {
@@ -210,4 +213,217 @@ nav .fa {
   .row {
     flex-direction: column;
   }
+}
+
+/* Campus Section */
+.campus-section {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.campus-section .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.campus-column {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.campus-column img {
+  width: 100%;
+  display: block;
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layer:hover {
+  background: rgba(226, 0, 0, 0.7);
+}
+
+.layer h3 {
+  width: 100%;
+  font-weight: 500;
+  font-size: 26px;
+  color: #fff;
+  bottom: 0;
+  left: 50%;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+  position: absolute;
+  transition: 0.5s;
+}
+
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+@media (max-width: 700px) {
+  .campus-section .row {
+    flex-direction: column;
+  }
+
+  .layer h3 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+/* Facilities Section */
+
+.facilities-section {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.facilities-section .row {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+}
+
+.facilities-column {
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+.facilities-column img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.facilities-column p {
+  padding: 0;
+}
+
+.facilities-column h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Testimonials Section */
+
+.testimonials-section {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.testimonials-section .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonials-column {
+  display: flex;
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background-color: #fff3f3;
+  padding: 25px;
+  cursor: pointer;
+}
+
+.testimonials-column img {
+  height: 80px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+
+.testimonials-column p {
+  padding: 0;
+}
+
+.testimonials-column h3 {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.testimonials-column .fa-solid,
+.fa-regular {
+  color: #f44336;
+}
+
+@media (max-width: 700px) {
+  .testimonials-section .row {
+    display: flex;
+  }
+
+  .testimonials-column {
+    margin: 0px;
+    margin-right: 15px;
+  }
+}
+
+.cta {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(https://plus.unsplash.com/premium_photo-1671751035347-e308f0a19b28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMDU3NzQ1NA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.cta h1 {
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+@media (max-width: 700px) {
+  .cta h1 {
+    font-size: 24px;
+  }
+}
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.footer .icon .fa-brands {
+  color: #f44336;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
 }
